@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="nopCommerceSuite" duration-ms="4146" started-at="2019-04-01T21:10:23Z" finished-at="2019-04-01T21:10:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="4146" started-at="2019-04-01T21:10:23Z" finished-at="2019-04-01T21:10:28Z">
+      <class name="tests.HomePageTestCase">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="startDriver" is-config="true" duration-ms="75398" started-at="2019-04-01T21:09:08Z" finished-at="2019-04-01T21:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="opening_desktops_page()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="opening_desktops_page" duration-ms="3030" started-at="2019-04-01T21:10:24Z" finished-at="2019-04-01T21:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opening_desktops_page -->
+        <test-method status="PASS" signature="open_registeration_page()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="open_registeration_page" duration-ms="1096" started-at="2019-04-01T21:10:27Z" depends-on-methods="tests.HomePageTestCase.opening_desktops_page" finished-at="2019-04-01T21:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_registeration_page -->
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="killDriver" is-config="true" duration-ms="626" started-at="2019-04-01T21:10:28Z" finished-at="2019-04-01T21:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killDriver -->
+      </class> <!-- tests.HomePageTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- nopCommerceSuite -->
+</testng-results>
