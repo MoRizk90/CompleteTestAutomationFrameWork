@@ -63,4 +63,8 @@ public class pageBase {
 	public void click(WebElement target_elem) {
 		target_elem.click();
 	}
+	
+	public void writeInElement(String textToBeSend, WebElement target_elem) {
+		target_elem.sendKeys(textToBeSend);
+	}
 }
