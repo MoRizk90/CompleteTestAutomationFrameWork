@@ -4,14 +4,14 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.HomePageTestCase">
+      <class name="tests.RegisterationTestCase">
         <methods>
           <include name="startDriver"/>
           <include name="killDriver"/>
-          <include name="opening_desktops_page"/>
           <include name="open_registeration_page"/>
+          <include name="RegisterNewUserWithCorrectcredential"/>
         </methods>
-      </class> <!-- tests.HomePageTestCase -->
+      </class> <!-- tests.RegisterationTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerceSuite] -->

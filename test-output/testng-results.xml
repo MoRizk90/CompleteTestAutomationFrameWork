@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="nopCommerceSuite" duration-ms="4146" started-at="2019-04-01T21:10:23Z" finished-at="2019-04-01T21:10:28Z">
+  <suite name="nopCommerceSuite" duration-ms="33550" started-at="2019-04-03T22:57:21Z" finished-at="2019-04-03T22:57:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4146" started-at="2019-04-01T21:10:23Z" finished-at="2019-04-01T21:10:28Z">
-      <class name="tests.HomePageTestCase">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="startDriver" is-config="true" duration-ms="75398" started-at="2019-04-01T21:09:08Z" finished-at="2019-04-01T21:10:23Z">
+    <test name="Test" duration-ms="33550" started-at="2019-04-03T22:57:21Z" finished-at="2019-04-03T22:57:55Z">
+      <class name="tests.RegisterationTestCase">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="startDriver" is-config="true" duration-ms="31768" started-at="2019-04-03T22:56:50Z" finished-at="2019-04-03T22:57:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="opening_desktops_page()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="opening_desktops_page" duration-ms="3030" started-at="2019-04-01T21:10:24Z" finished-at="2019-04-01T21:10:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opening_desktops_page -->
-        <test-method status="PASS" signature="open_registeration_page()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="open_registeration_page" duration-ms="1096" started-at="2019-04-01T21:10:27Z" depends-on-methods="tests.HomePageTestCase.opening_desktops_page" finished-at="2019-04-01T21:10:28Z">
+        <test-method status="PASS" signature="open_registeration_page()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="open_registeration_page" duration-ms="19292" started-at="2019-04-03T22:57:21Z" finished-at="2019-04-03T22:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_registeration_page -->
-        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.HomePageTestCase@4c70fda8]" name="killDriver" is-config="true" duration-ms="626" started-at="2019-04-01T21:10:28Z" finished-at="2019-04-01T21:10:28Z">
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectcredential()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="RegisterNewUserWithCorrectcredential" duration-ms="14239" started-at="2019-04-03T22:57:41Z" depends-on-methods="tests.RegisterationTestCase.open_registeration_page" finished-at="2019-04-03T22:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUserWithCorrectcredential -->
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="killDriver" is-config="true" duration-ms="592" started-at="2019-04-03T22:57:55Z" finished-at="2019-04-03T22:57:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
-      </class> <!-- tests.HomePageTestCase -->
+      </class> <!-- tests.RegisterationTestCase -->
     </test> <!-- Test -->
   </suite> <!-- nopCommerceSuite -->
 </testng-results>
