@@ -26,7 +26,7 @@ public class RegisterationTestCase extends TestBase {
 
 
 
-	@Test
+	@Test(enabled = false)
 	public void open_registeration_page() {
 		home_page_obj = new HomePage(testBaseDriver);
 		home_page_obj.click_on_reg_link();
@@ -57,8 +57,9 @@ public class RegisterationTestCase extends TestBase {
 	}
 	
 	@SuppressWarnings("static-access")
-	@Test(dependsOnMethods = {"open_registeration_page"}, priority = 1)
+	@Test(priority = 1)
 	public void add_data_to_excel() throws IOException {
+		for (int i = 0; i < 6; i++) {
 		String gender = "male" ;
 		String first_name = fakeObj.name().firstName();
 		String Last_name  = fakeObj.name().lastName();
@@ -73,8 +74,8 @@ public class RegisterationTestCase extends TestBase {
 		String testPassword = fakeObj.internet().password();
 		HandlingExcel new_excel_handler = new HandlingExcel();
 		new_excel_handler.Open_excel_sheet();
-		new_excel_handler.write_data_into_excel(0, "1", gender, first_name, Last_name, theDay, TheMonth, theYear, email, company, testPassword);
-		
+		new_excel_handler.write_data_into_excel(i+1, "1", gender, first_name, Last_name, theDay, TheMonth, theYear, email, company, testPassword);
+		}
 	}
 	
 	@DataProvider(name= "excelData")

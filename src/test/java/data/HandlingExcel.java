@@ -66,7 +66,7 @@ public class HandlingExcel {
 		XSSFWorkbook test_work_book = new XSSFWorkbook(targeted_excel_for_test);
 		XSSFSheet test_sheet = test_work_book.getSheetAt(0);
 		Map<String, Object[]> data = new TreeMap<String, Object[]>(); 
-		data.put("0", new Object[]{"gender", "first_name", "Last_name", "theDay", "TheMonth", "theYear", "email", "company", "testPassword"});
+//		data.put("0", new Object[]{"gender", "first_name", "Last_name", "theDay", "TheMonth", "theYear", "email", "company", "testPassword"});
 		data.put(row_location, new Object[]{ enter_gender, enter_first_name, enter_last_name, enter_the_Day, enter_The_Month, enter_the_Year, enter_test_email, enter_test_company, enter_test_Password});
 		Set<String> keyset = data.keySet();
 		int rownum = row_count; 
@@ -95,7 +95,7 @@ public class HandlingExcel {
 			test_work_book.write(out); 
 			out.close(); 
 //			test_work_book.close();
-			System.out.println("gfgcontribute.xlsx written successfully on disk."); 
+			System.out.println("written successfully on disk."); 
 		} 
 		catch (Exception e) { 
 			e.printStackTrace(); 

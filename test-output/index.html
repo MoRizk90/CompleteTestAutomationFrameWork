@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-nopCommerceSuite">
-              <span class="suite-name border-failed">nopCommerceSuite</span>
+              <span class="suite-name border-skipped">nopCommerceSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-nopCommerceSuite" class="hide-methods failed suite-nopCommerceSuite"> (hide)</a> <!-- hide-methods failed suite-nopCommerceSuite -->
-                      <a href="#" panel-name="suite-nopCommerceSuite" class="show-methods failed suite-nopCommerceSuite"> (show)</a> <!-- show-methods failed suite-nopCommerceSuite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-nopCommerceSuite" class="hide-methods skipped suite-nopCommerceSuite"> (hide)</a> <!-- hide-methods skipped suite-nopCommerceSuite -->
+                      <a href="#" panel-name="suite-nopCommerceSuite" class="show-methods skipped suite-nopCommerceSuite"> (show)</a> <!-- show-methods skipped suite-nopCommerceSuite -->
                     </span>
-                    <div class="method-list-content failed suite-nopCommerceSuite">
+                    <div class="method-list-content skipped suite-nopCommerceSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCase" hash-for-method="RegisterNewUserWithCorrectCredentialWithExcel">RegisterNewUserWithCorrectCredentialWithExcel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-nopCommerceSuite -->
+                    </div> <!-- method-list-content skipped suite-nopCommerceSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCase" hash-for-method="add_data_to_excel">add_data_to_excel</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopCommerceSuite" title="tests.RegisterationTestCase" hash-for-method="open_registeration_page">open_registeration_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-nopCommerceSuite -->
@@ -136,9 +131,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-nopCommerceSuite" class="panel nopCommerceSuite">
-          <div class="suite-nopCommerceSuite-class-failed">
+          <div class="suite-nopCommerceSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">tests.RegisterationTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,16 +142,17 @@
                   <a name="RegisterNewUserWithCorrectCredentialWithExcel">
                   </a> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
                   <span class="method-name">RegisterNewUserWithCorrectCredentialWithExcel</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: RegisterNewUserWithCorrectCredentialWithExcel([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) gender,(java.lang.String) first_name,(java.lang.String) Last_name,(java.lang.String) theDay]
-... Removed 20 stack frames
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
+Caused by: java.lang.NullPointerException
+	at data.HandlingExcel.getExcelData(HandlingExcel.java:50)
+	at tests.RegisterationTestCase.userRegisterData(RegisterationTestCase.java:84)
+	... 22 more
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-nopCommerceSuite-class-failed -->
+          </div> <!-- suite-nopCommerceSuite-class-skipped -->
           <div class="suite-nopCommerceSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -168,13 +164,6 @@ Arguments: [(java.lang.String) gender,(java.lang.String) first_name,(java.lang.S
                   <a name="add_data_to_excel">
                   </a> <!-- add_data_to_excel -->
                   <span class="method-name">add_data_to_excel</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="open_registeration_page">
-                  </a> <!-- open_registeration_page -->
-                  <span class="method-name">open_registeration_page</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,24 +221,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'open_registeration_page')
+data.setCell(0, 1, 'add_data_to_excel')
 data.setCell(0, 2, 'tests.RegisterationTestCase')
-data.setCell(0, 3, 789);
+data.setCell(0, 3, 586);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'add_data_to_excel')
+data.setCell(1, 1, 'RegisterNewUserWithCorrectCredentialWithExcel')
 data.setCell(1, 2, 'tests.RegisterationTestCase')
-data.setCell(1, 3, 424);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'RegisterNewUserWithCorrectCredentialWithExcel')
-data.setCell(2, 2, 'tests.RegisterationTestCase')
-data.setCell(2, 3, 15);
+data.setCell(1, 3, 0);
 window.suiteTableData['nopCommerceSuite']= { tableData: data, tableDiv: 'times-div-nopCommerceSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 586 ms</span>
               <div id="times-div-nopCommerceSuite">
               </div> <!-- times-div-nopCommerceSuite -->
             </div> <!-- times-div -->
@@ -264,12 +249,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-nopCommerceSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.RegisterationTestCase</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">open_registeration_page</span>
+                <br/>
                 <span class="ignored-method-name">RegisterNewUserWithCorrectcredential</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -288,16 +275,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">open_registeration_page</span>
-                <span class="method-start">5968 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">add_data_to_excel</span>
-                <span class="method-start">6759 ms</span>
+                <span class="method-start">46043 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">killDriver</span>
-                <span class="method-start">7230 ms</span>
+                <span class="method-start">46686 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
