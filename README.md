@@ -3,7 +3,7 @@
 This is a project that I made to test new testing skills achieved in test automation using selenium with java bindings and it will be continually developed with new tactics and tec
 
 
-### Prerequisites
+## Prerequisites
 
 1.install maven  on your windows machine from here [Apache Maven](https://docs.wso2.com/display/IS323/Installing+Apache+Maven+on+Windows)
 
@@ -13,21 +13,17 @@ This is a project that I made to test new testing skills achieved in test automa
 
 
 
-### Execution :
+## Execution :
 
 Just run the file testng.xml
 
 
-###  coding style used :
+##  Coding style used :
 Behavior Driven development
 Data driven development
 PageFactory design pattern
 
 
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
