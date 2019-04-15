@@ -9,7 +9,8 @@
           <include name="startDriver"/>
           <include name="killDriver"/>
           <include name="open_registeration_page"/>
-          <include name="RegisterNewUserWithCorrectcredential"/>
+          <include name="RegisterNewUserWithCorrectCredentialWithExcel"/>
+          <include name="add_data_to_excel"/>
         </methods>
       </class> <!-- tests.RegisterationTestCase -->
     </classes>

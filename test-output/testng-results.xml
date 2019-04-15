@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="1" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="nopCommerceSuite" duration-ms="33550" started-at="2019-04-03T22:57:21Z" finished-at="2019-04-03T22:57:55Z">
+  <suite name="nopCommerceSuite" duration-ms="1246" started-at="2019-04-08T23:34:04Z" finished-at="2019-04-08T23:34:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33550" started-at="2019-04-03T22:57:21Z" finished-at="2019-04-03T22:57:55Z">
+    <test name="Test" duration-ms="1246" started-at="2019-04-08T23:34:04Z" finished-at="2019-04-08T23:34:05Z">
       <class name="tests.RegisterationTestCase">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="startDriver" is-config="true" duration-ms="31768" started-at="2019-04-03T22:56:50Z" finished-at="2019-04-03T22:57:21Z">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="startDriver" is-config="true" duration-ms="5955" started-at="2019-04-08T23:33:58Z" finished-at="2019-04-08T23:34:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="open_registeration_page()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="open_registeration_page" duration-ms="19292" started-at="2019-04-03T22:57:21Z" finished-at="2019-04-03T22:57:41Z">
+        <test-method status="PASS" signature="open_registeration_page()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="open_registeration_page" duration-ms="789" started-at="2019-04-08T23:34:04Z" finished-at="2019-04-08T23:34:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_registeration_page -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectcredential()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="RegisterNewUserWithCorrectcredential" duration-ms="14239" started-at="2019-04-03T22:57:41Z" depends-on-methods="tests.RegisterationTestCase.open_registeration_page" finished-at="2019-04-03T22:57:55Z">
+        <test-method status="PASS" signature="add_data_to_excel()[pri:1, instance:tests.RegisterationTestCase@7c457099]" name="add_data_to_excel" duration-ms="424" started-at="2019-04-08T23:34:04Z" depends-on-methods="tests.RegisterationTestCase.open_registeration_page" finished-at="2019-04-08T23:34:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterNewUserWithCorrectcredential -->
-        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.RegisterationTestCase@34d3f4e2]" name="killDriver" is-config="true" duration-ms="592" started-at="2019-04-03T22:57:55Z" finished-at="2019-04-03T22:57:55Z">
+        </test-method> <!-- add_data_to_excel -->
+        <test-method status="FAIL" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="15" started-at="2019-04-08T23:34:05Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-08T23:34:05Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: RegisterNewUserWithCorrectCredentialWithExcel([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) gender,(java.lang.String) first_name,(java.lang.String) Last_name,(java.lang.String) theDay]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: RegisterNewUserWithCorrectCredentialWithExcel([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) gender,(java.lang.String) first_name,(java.lang.String) Last_name,(java.lang.String) theDay]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="killDriver" is-config="true" duration-ms="588" started-at="2019-04-08T23:34:05Z" finished-at="2019-04-08T23:34:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
