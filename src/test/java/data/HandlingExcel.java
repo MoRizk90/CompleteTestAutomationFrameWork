@@ -40,8 +40,8 @@ public class HandlingExcel {
 		Open_excel_sheet();
 		XSSFWorkbook test_work_book = new XSSFWorkbook(targeted_excel_for_test);
 		XSSFSheet test_sheet = test_work_book.getSheetAt(0);
-		int TotalNumberofRow = (test_sheet.getLastRowNum() + 1);
-		int TotalNumberOfColumn = 4;
+		int TotalNumberofRow = (test_sheet.getLastRowNum());
+		int TotalNumberOfColumn = 9;
 		String[][] arrayExcelData =  new String[TotalNumberofRow][TotalNumberOfColumn];
 		for (int rows = 0; rows < TotalNumberofRow; rows++) {
 			for (int column = 0; column < TotalNumberOfColumn ; column++) {
