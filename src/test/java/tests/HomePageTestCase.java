@@ -5,8 +5,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.github.javafaker.Faker;
-
 import pages.HomePage;
 import pages.RegisterPage;
 

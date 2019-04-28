@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="1" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="nopCommerceSuite" duration-ms="48383" started-at="2019-04-25T21:14:54Z" finished-at="2019-04-25T21:15:42Z">
+  <suite name="nopCommerceSuite" duration-ms="36949" started-at="2019-04-28T18:57:37Z" finished-at="2019-04-28T18:58:14Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="48383" started-at="2019-04-25T21:14:54Z" finished-at="2019-04-25T21:15:42Z">
+    <test name="Test" duration-ms="36949" started-at="2019-04-28T18:57:37Z" finished-at="2019-04-28T18:58:14Z">
       <class name="tests.RegisterationTestCase">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="startDriver" is-config="true" duration-ms="22100" started-at="2019-04-25T21:14:32Z" finished-at="2019-04-25T21:14:54Z">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="startDriver" is-config="true" duration-ms="10326" started-at="2019-04-28T18:57:27Z" finished-at="2019-04-28T18:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="open_registeration_page()[pri:1, instance:tests.RegisterationTestCase@7c457099]" name="open_registeration_page" duration-ms="13317" started-at="2019-04-25T21:14:54Z" finished-at="2019-04-25T21:15:07Z">
+        <test-method status="PASS" signature="open_registeration_page()[pri:1, instance:tests.RegisterationTestCase@7c457099]" name="open_registeration_page" duration-ms="2080" started-at="2019-04-28T18:57:37Z" finished-at="2019-04-28T18:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_registeration_page -->
-        <test-method status="PASS" signature="add_data_to_excel()[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="add_data_to_excel" duration-ms="703" started-at="2019-04-25T21:15:07Z" depends-on-methods="tests.RegisterationTestCase.open_registeration_page" finished-at="2019-04-25T21:15:08Z">
+        <test-method status="PASS" signature="add_data_to_excel()[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="add_data_to_excel" duration-ms="2462" started-at="2019-04-28T18:57:39Z" depends-on-methods="tests.RegisterationTestCase.open_registeration_page" finished-at="2019-04-28T18:57:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_data_to_excel -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="7149" started-at="2019-04-25T21:15:08Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-25T21:15:15Z">
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="7132" started-at="2019-04-28T18:57:42Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-28T18:57:49Z">
           <params>
             <param index="0">
               <value>
@@ -28,17 +28,17 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Shane]]>
+                <![CDATA[Buford]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Fritsch]]>
+                <![CDATA[Beatty]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[6]]>
               </value>
             </param>
             <param index="4">
@@ -53,24 +53,24 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[yajaira.rippin@gmail.com]]>
+                <![CDATA[daren.schneider@hotmail.com]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Conroy and Sons]]>
+                <![CDATA[Hodkiewicz, Larson and Leffler]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[gb1fr5fnxm]]>
+                <![CDATA[eug61tw4n]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="6242" started-at="2019-04-25T21:15:15Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-25T21:15:21Z">
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="5445" started-at="2019-04-28T18:57:49Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-28T18:57:54Z">
           <params>
             <param index="0">
               <value>
@@ -79,63 +79,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Kaylee]]>
+                <![CDATA[Clare]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Hodkiewicz]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2019]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[don.jakubowski@hotmail.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Walsh-Kiehn]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[oqg298i18]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="5524" started-at="2019-04-25T21:15:21Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-25T21:15:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Travis]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Wintheiser]]>
+                <![CDATA[Bayer]]>
               </value>
             </param>
             <param index="3">
@@ -155,24 +104,24 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[houston.ferry@yahoo.com]]>
+                <![CDATA[rocco.brakus@hotmail.com]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Jacobson Group]]>
+                <![CDATA[Metz, Kulas and Koch]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[9ehbjr8c6716f1]]>
+                <![CDATA[gk0qyivtacpzqr]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="5293" started-at="2019-04-25T21:15:27Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-25T21:15:32Z">
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="4848" started-at="2019-04-28T18:57:54Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-28T18:57:59Z">
           <params>
             <param index="0">
               <value>
@@ -181,17 +130,17 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Curt]]>
+                <![CDATA[Antionette]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Ortiz]]>
+                <![CDATA[Hauck]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="4">
@@ -206,24 +155,24 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[modesto.bechtelar@yahoo.com]]>
+                <![CDATA[roger.brakus@yahoo.com]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Ziemann-Gislason]]>
+                <![CDATA[Sanford, Stokes and Bode]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[1nxt2leu40k7e4]]>
+                <![CDATA[hzsbrl5h4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="4750" started-at="2019-04-25T21:15:32Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-25T21:15:37Z">
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="5020" started-at="2019-04-28T18:57:59Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-28T18:58:04Z">
           <params>
             <param index="0">
               <value>
@@ -232,12 +181,114 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sol]]>
+                <![CDATA[Abel]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Jones]]>
+                <![CDATA[Kautzer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[oma.bechtelar@hotmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[King, Kiehn and Dare]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1z01a8nb7u8wr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="4906" started-at="2019-04-28T18:58:04Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-28T18:58:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Erasmo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rath]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2019]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[dallas.hermiston@hotmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Nitzsche-Hyatt]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[v4az5y08nziin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
+        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="4873" started-at="2019-04-28T18:58:09Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-28T18:58:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Huey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Konopelski]]>
               </value>
             </param>
             <param index="3">
@@ -257,75 +308,24 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[hunter.rippin@gmail.com]]>
+                <![CDATA[donnie.berge@hotmail.com]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Robel-Price]]>
+                <![CDATA[Durgan and Sons]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[w6bf21n08qkl9]]>
+                <![CDATA[nzzck85wzqgi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
-        <test-method status="PASS" signature="RegisterNewUserWithCorrectCredentialWithExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.RegisterationTestCase@7c457099]" name="RegisterNewUserWithCorrectCredentialWithExcel" duration-ms="5344" started-at="2019-04-25T21:15:37Z" data-provider="excelData" depends-on-methods="tests.RegisterationTestCase.add_data_to_excel" finished-at="2019-04-25T21:15:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Marquetta]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Fritsch]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2019]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[kindra.erdman@yahoo.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Haley LLC]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[1nxsvl3raf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisterNewUserWithCorrectCredentialWithExcel -->
-        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="killDriver" is-config="true" duration-ms="616" started-at="2019-04-25T21:15:42Z" finished-at="2019-04-25T21:15:43Z">
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.RegisterationTestCase@7c457099]" name="killDriver" is-config="true" duration-ms="810" started-at="2019-04-28T18:58:14Z" finished-at="2019-04-28T18:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
