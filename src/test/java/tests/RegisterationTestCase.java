@@ -26,7 +26,7 @@ public class RegisterationTestCase extends TestBase {
 
 
 
-	@Test(enabled = false)
+	@Test(enabled = true, priority = 1)
 	public void open_registeration_page() {
 		home_page_obj = new HomePage(testBaseDriver);
 		home_page_obj.click_on_reg_link();
@@ -36,7 +36,7 @@ public class RegisterationTestCase extends TestBase {
 	}
 
 	@SuppressWarnings("static-access")
-	@Test(dependsOnMethods = {"open_registeration_page"}, priority = 1, enabled = false)
+	@Test(dependsOnMethods = {"add_data_to_excel"}, priority = 3, enabled = false)
 	private void RegisterNewUserWithCorrectcredential() {
 		reg_page_obj = new RegisterPage(testBaseDriver);
 		String gender = "male" ;
@@ -57,7 +57,7 @@ public class RegisterationTestCase extends TestBase {
 	}
 	
 	@SuppressWarnings("static-access")
-	@Test(priority = 1)
+	@Test(dependsOnMethods = {"open_registeration_page"}, priority = 2, enabled = true)
 	public void add_data_to_excel() throws IOException {
 		for (int i = 0; i < 6; i++) {
 		String gender = "male" ;
@@ -88,11 +88,15 @@ public class RegisterationTestCase extends TestBase {
 	@Test(dependsOnMethods = {"add_data_to_excel"}, priority = 2, dataProvider = "excelData") 
 	private void RegisterNewUserWithCorrectCredentialWithExcel(String gender, String first_name, String Last_name, String theDay, String TheMonth, String theYear, String email, String company, String testPassword) {
 		reg_page_obj = new RegisterPage(testBaseDriver);
+		System.out.println(gender);
 		reg_page_obj.registerNewUser(gender, first_name, Last_name, theDay, Integer.parseInt(TheMonth), theYear, email, company, testPassword);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("register-continue")));
 		assertTrue(reg_page_obj.registerationSuccessMsg.getText().contentEquals("Your registration completed"));
+		home_page_obj.logout();
+		home_page_obj.click_on_reg_link();
 	}
 
+	
 
 
 

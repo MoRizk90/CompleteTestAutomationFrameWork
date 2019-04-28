@@ -35,19 +35,21 @@ public class HandlingExcel {
 
 	}
 
-	@DataProvider(name= "excelData")
+//	@DataProvider(name= "excelData")
 	public Object[][] getExcelData() throws IOException{
 		Open_excel_sheet();
 		XSSFWorkbook test_work_book = new XSSFWorkbook(targeted_excel_for_test);
 		XSSFSheet test_sheet = test_work_book.getSheetAt(0);
 		int TotalNumberofRow = (test_sheet.getLastRowNum());
 		int TotalNumberOfColumn = 9;
-		String[][] arrayExcelData =  new String[TotalNumberofRow][TotalNumberOfColumn];
-		for (int rows = 0; rows < TotalNumberofRow; rows++) {
+		String[][] arrayExcelData =  new String[TotalNumberofRow -1][TotalNumberOfColumn];
+		for (int rows = 1; rows < TotalNumberofRow; rows++) {
 			for (int column = 0; column < TotalNumberOfColumn ; column++) {
-
-				XSSFRow row = test_sheet.getRow(rows);
-				arrayExcelData[rows][column] = row.getCell(column).toString();
+ 
+				XSSFRow row = test_sheet.getRow(rows);				
+				arrayExcelData[rows - 1][column] = row.getCell(column).toString();
+//				System.out.println(arrayExcelData[rows][column]);
+				
 
 			}
 

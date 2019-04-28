@@ -8,7 +8,8 @@
         <methods>
           <include name="startDriver"/>
           <include name="killDriver"/>
-          <include name="RegisterNewUserWithCorrectCredentialWithExcel" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="open_registeration_page"/>
+          <include name="RegisterNewUserWithCorrectCredentialWithExcel" invocation-numbers="5 6"/>
           <include name="add_data_to_excel"/>
         </methods>
       </class> <!-- tests.RegisterationTestCase -->

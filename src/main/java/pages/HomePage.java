@@ -48,6 +48,9 @@ public class HomePage extends pageBase{
 	@FindBy(xpath= "//ul[@class='top-menu']//a[contains(text(),'Desktops')]")
 	WebElement desktop;
 	
+	@FindBy(className = "ico-logout")
+	WebElement logOut;
+	
 	
 	
 	@FindBy(tagName= "a")
@@ -89,6 +92,11 @@ public class HomePage extends pageBase{
 	}
 	public void click_on_reg_link() {
 		click(RegisterLink);
+		
+	}
+	
+	public void logout() {
+		click(logOut);
 		
 	}
 
