@@ -4,15 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.RegisterationTestCase">
+      <class name="tests.AddToCartTestCases">
         <methods>
           <include name="startDriver"/>
           <include name="killDriver"/>
-          <include name="open_registeration_page"/>
-          <include name="RegisterNewUserWithCorrectCredentialWithExcel" invocation-numbers="5 6"/>
-          <include name="add_data_to_excel"/>
+          <include name="add_Desktop_to_cart"/>
         </methods>
-      </class> <!-- tests.RegisterationTestCase -->
+      </class> <!-- tests.AddToCartTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerceSuite] -->
