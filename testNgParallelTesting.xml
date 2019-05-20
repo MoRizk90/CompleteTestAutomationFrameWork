@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="test" name="nopCommerceSuite" thread-count="2">
+	<test name="Test">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="tests.UserRegistrationParallelTesting " />
+		</classes>
+	</test>
+	
+	<test name="Test">
+	<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="tests.UserRegistrationParallelTesting " />
+		</classes>
+	</test>
+</suite> 
