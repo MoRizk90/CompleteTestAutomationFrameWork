@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="nopCommerceSuite" duration-ms="11261" started-at="2019-05-18T12:50:37Z" finished-at="2019-05-18T12:50:48Z">
+  <suite name="nopCommerceSuite" duration-ms="12166" started-at="2019-05-25T20:00:34Z" finished-at="2019-05-25T20:00:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11261" started-at="2019-05-18T12:50:37Z" finished-at="2019-05-18T12:50:48Z">
+    <test name="Test" duration-ms="12166" started-at="2019-05-25T20:00:34Z" finished-at="2019-05-25T20:00:46Z">
       <class name="tests.AddToCartTestCases">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.AddToCartTestCases@77caeb3e]" name="startDriver" is-config="true" duration-ms="9763" started-at="2019-05-18T12:50:27Z" finished-at="2019-05-18T12:50:37Z">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.AddToCartTestCases@6d4b1c02]" name="startDriver" is-config="true" duration-ms="5260" started-at="2019-05-25T20:00:28Z" finished-at="2019-05-25T20:00:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="add_Desktop_to_cart()[pri:0, instance:tests.AddToCartTestCases@77caeb3e]" name="add_Desktop_to_cart" duration-ms="11225" started-at="2019-05-18T12:50:37Z" finished-at="2019-05-18T12:50:48Z">
+        <test-method status="PASS" signature="add_Desktop_to_cart()[pri:0, instance:tests.AddToCartTestCases@6d4b1c02]" name="add_Desktop_to_cart" duration-ms="12142" started-at="2019-05-25T20:00:34Z" finished-at="2019-05-25T20:00:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Desktop_to_cart -->
-        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.AddToCartTestCases@77caeb3e]" name="killDriver" is-config="true" duration-ms="800" started-at="2019-05-18T12:50:48Z" finished-at="2019-05-18T12:50:49Z">
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.AddToCartTestCases@6d4b1c02]" name="killDriver" is-config="true" duration-ms="67" started-at="2019-05-25T20:00:46Z" finished-at="2019-05-25T20:00:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
