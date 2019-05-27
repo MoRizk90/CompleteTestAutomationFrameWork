@@ -94,6 +94,9 @@ public class HomePage extends pageBase{
 		click(RegisterLink);
 		
 	}
+	public void clickOnLoginLink() {
+		click(lognLink);
+	}
 	
 	public void logout() {
 		click(logOut);

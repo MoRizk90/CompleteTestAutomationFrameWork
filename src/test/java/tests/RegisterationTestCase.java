@@ -88,7 +88,6 @@ public class RegisterationTestCase extends TestBase {
 	@Test(dependsOnMethods = {"add_data_to_excel"}, priority = 2, dataProvider = "excelData") 
 	private void RegisterNewUserWithCorrectCredentialWithExcel(String gender, String first_name, String Last_name, String theDay, String TheMonth, String theYear, String email, String company, String testPassword) {
 		reg_page_obj = new RegisterPage(testBaseDriver);
-		System.out.println(gender);
 		reg_page_obj.registerNewUser(gender, first_name, Last_name, theDay, Integer.parseInt(TheMonth), theYear, email, company, testPassword);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("register-continue")));
 		assertTrue(reg_page_obj.registerationSuccessMsg.getText().contentEquals("Your registration completed"));
