@@ -60,7 +60,7 @@ public class RegisterationTestCase extends TestBase {
 	@Test(dependsOnMethods = {"open_registeration_page"}, priority = 2, enabled = true)
 	public void add_data_to_excel() throws IOException {
 		for (int i = 0; i < 6; i++) {
-		String gender = "male" ;
+		String gender = "male";
 		String first_name = fakeObj.name().firstName();
 		String Last_name  = fakeObj.name().lastName();
 		Date theDate = fakeObj.date().future(10, TimeUnit.DAYS);

@@ -8,7 +8,7 @@ public class LoginPage extends pageBase{
 	public LoginPage(WebDriver driverToBeUsedByPaseBaseObj) {
 		super(driverToBeUsedByPaseBaseObj);
 	}
-	
+
 	private HomePage homeObj;
 
 	@FindBy(id= "Email")
@@ -19,16 +19,14 @@ public class LoginPage extends pageBase{
 
 	@FindBy(className= "login-button")
 	private WebElement loginButton;
-	
-	public void goTologinScreen() {
-		
+
+	public void loginWithSuccssfullCredintials(String email, String password) {
+		writeInElement(email, emailTxtBox);
+		writeInElement(password, passwordTxtBox);
+		click(loginButton);
 	}
-	
-	public void loginWithSuccssfullCredintials(String email) {
-		
-	}
-	
-	
+
+
 
 
 

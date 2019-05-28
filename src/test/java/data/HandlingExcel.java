@@ -9,8 +9,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -20,7 +20,7 @@ public class HandlingExcel {
 	static FileInputStream excel_workbook_holder = null;
 
 	static FileInputStream targeted_excel_for_test ;
-	String file_Path = System.getProperty("user.dir") + "\\src\\test\\java\\data\\TestData.xlsx";
+	String file_Path = System.getProperty("user.dir") + "//src//test//java//data//TestData.xlsx";
 
 	public FileInputStream Open_excel_sheet() {
 
@@ -54,14 +54,36 @@ public class HandlingExcel {
 			}
 
 		}
-//		test_work_book.close();
-		System.out.println(arrayExcelData);
+		
+//		System.out.println(arrayExcelData);
 		
 		return arrayExcelData;
+//		test_work_book.close();
 		
 
 	}
 
+	
+	public void getUserNameAndPasswordOnly() {
+		Open_excel_sheet();
+		XSSFWorkbook test_work_book = new XSSFWorkbook(targeted_excel_for_test);
+		XSSFSheet test_sheet = test_work_book.getSheetAt(0);
+		int TotalNumberofRow = (test_sheet.getLastRowNum());
+		
+		int TotalNumberOfColumn = 9;
+		for (int rowIndex = 0; rowIndex <= TotalNumberofRow; rowIndex++) {
+			  XSSFRow newRow = test_sheet.getRow(rowIndex);
+			  if (newRow != null) {
+			    Cell cell = row.getCell(colIndex);
+			    if (cell != null) {
+			      // Found column and there is value in the cell.
+			      cellValueMaybeNull = cell.getStringCellValue();
+			      // Do something with the cellValueMaybeNull here ...
+			    }
+			  }
+			}
+	}
+	
 	public void write_data_into_excel(int row_count, String row_location, String enter_gender, String enter_first_name, String enter_last_name	, String enter_the_Day, String enter_The_Month,  String enter_the_Year,String enter_test_email, String	enter_test_company, String	enter_test_Password
 			) throws IOException {
 		Open_excel_sheet();
