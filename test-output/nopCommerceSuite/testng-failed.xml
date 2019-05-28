@@ -4,13 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.AddToCartTestCases">
+      <class name="tests.LoginTestCases">
         <methods>
           <include name="startDriver"/>
           <include name="killDriver"/>
-          <include name="add_Desktop_to_cart"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- tests.AddToCartTestCases -->
+      </class> <!-- tests.LoginTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerceSuite] -->

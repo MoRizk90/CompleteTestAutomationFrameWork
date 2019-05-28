@@ -1,25 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="nopCommerceSuite" duration-ms="12166" started-at="2019-05-25T20:00:34Z" finished-at="2019-05-25T20:00:46Z">
+  <suite name="nopCommerceSuite" duration-ms="565" started-at="2019-05-28T08:52:48Z" finished-at="2019-05-28T08:52:49Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12166" started-at="2019-05-25T20:00:34Z" finished-at="2019-05-25T20:00:46Z">
-      <class name="tests.AddToCartTestCases">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.AddToCartTestCases@6d4b1c02]" name="startDriver" is-config="true" duration-ms="5260" started-at="2019-05-25T20:00:28Z" finished-at="2019-05-25T20:00:34Z">
+    <test name="Test" duration-ms="565" started-at="2019-05-28T08:52:48Z" finished-at="2019-05-28T08:52:49Z">
+      <class name="tests.LoginTestCases">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.LoginTestCases@5622fdf]" name="startDriver" is-config="true" duration-ms="3685" started-at="2019-05-28T08:52:44Z" finished-at="2019-05-28T08:52:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="add_Desktop_to_cart()[pri:0, instance:tests.AddToCartTestCases@6d4b1c02]" name="add_Desktop_to_cart" duration-ms="12142" started-at="2019-05-25T20:00:34Z" finished-at="2019-05-25T20:00:46Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTestCases@5622fdf]" name="login" duration-ms="546" started-at="2019-05-28T08:52:48Z" data-provider="excelData" finished-at="2019-05-28T08:52:49Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: login([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) male,(java.lang.String) Joannie,(java.lang.String) Koelpin,(java.lang.String) 30,(java.lang.String) 4,(java.lang.String) 2019,(java.lang.String) gordon.grady@hotmail.com,(java.lang.String) Gottlieb Inc,(java.lang.String) zzklx9z4e]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: login([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) male,(java.lang.String) Joannie,(java.lang.String) Koelpin,(java.lang.String) 30,(java.lang.String) 4,(java.lang.String) 2019,(java.lang.String) gordon.grady@hotmail.com,(java.lang.String) Gottlieb Inc,(java.lang.String) zzklx9z4e]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_Desktop_to_cart -->
-        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.AddToCartTestCases@6d4b1c02]" name="killDriver" is-config="true" duration-ms="67" started-at="2019-05-25T20:00:46Z" finished-at="2019-05-25T20:00:46Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="killDriver()[pri:0, instance:tests.LoginTestCases@5622fdf]" name="killDriver" is-config="true" duration-ms="68" started-at="2019-05-28T08:52:49Z" finished-at="2019-05-28T08:52:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killDriver -->
-      </class> <!-- tests.AddToCartTestCases -->
+      </class> <!-- tests.LoginTestCases -->
     </test> <!-- Test -->
   </suite> <!-- nopCommerceSuite -->
 </testng-results>
